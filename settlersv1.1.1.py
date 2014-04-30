@@ -260,7 +260,9 @@ def drawBoard(): # draws and updates the board
     gamewindow.blit(woodNum,woodBox3)
 
     CreateMSG("city", 535, 537, 10)
-
+    CreateMSG("To build:", 630, 320, 14)
+    CreateMSG("Click a point", 630,340,14)
+    CreateMSG("Click the desired structure", 640, 360, 14)
     for i in range(len(players)):
 	if i==currentplayer:
 		pygame.draw.line(gamewindow,green,(245,517+20*i),(255,517+20*i),5)
